@@ -25,7 +25,7 @@ func Function_test(t *testing.T) {
 func Test_no_auth_error(t *testing.T) {
 	headers := http.Header{}
 	got, err := GetAPIKey(headers)
-	want := ""
+	want := "a"
 	want_err := ErrNoAuthHeaderIncluded
 	if !reflect.DeepEqual(want, got) {
 		t.Fatalf("expected: %v, got: %v", want, got)
