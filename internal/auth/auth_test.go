@@ -4,7 +4,6 @@ import (
 	"errors"
 	"net/http"
 	"reflect"
-	"strings"
 	"testing"
 )
 
@@ -51,6 +50,7 @@ func Test_malformed_error(t *testing.T) {
 
 }
 
+/*
 func GetAPIKey(headers http.Header) (string, error) {
 	authHeader := headers.Get("Authorization")
 	if authHeader == "" {
@@ -63,3 +63,4 @@ func GetAPIKey(headers http.Header) (string, error) {
 
 	return splitAuth[1], nil
 }
+*/
