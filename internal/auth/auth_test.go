@@ -12,7 +12,7 @@ func Function_test(t *testing.T) {
 	got, err := GetAPIKey(headers)
 	want := "512"
 	var want_err error = nil
-	//want_err = 
+	//want_err =
 
 	if !reflect.DeepEqual(want, got) {
 		t.Fatalf("expected: %v, got: %v", want, got)
