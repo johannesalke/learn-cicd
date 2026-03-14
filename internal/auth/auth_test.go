@@ -11,8 +11,8 @@ func Function_test(t *testing.T) {
 	headers := http.Header{"Authorization": []string{"ApiKey 512"}}
 	got, err := GetAPIKey(headers)
 	want := "512"
-	var want_err error
-	want_err = nil
+	var want_err error = nil
+	//want_err =
 
 	if !reflect.DeepEqual(want, got) {
 		t.Fatalf("expected: %v, got: %v", want, got)
